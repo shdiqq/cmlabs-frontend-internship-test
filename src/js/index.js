@@ -17,6 +17,11 @@ const detectRoute = () => {
   return routes[url];
 };
 
+window.addEventListener('DOMContentLoaded', async () => {
+  const route = detectRoute();
+  route.init();
+});
+
 window.addEventListener('load', () => {
   const route = detectRoute();
   route.init();
