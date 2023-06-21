@@ -1,10 +1,82 @@
-@media screen and (min0-width: 500px) {
+@media screen and (min-width: 450px) {
+  main .card-category-container .card-category-record card-food .card-food-body h1,
+  main .card-filter-category-container .card-filter-category-record card-food .card-food-body h1 {
+    font-size: 30px;
+  }
+  
+  main .title h1 {
+    font-size: 30px;
+  }
+
+  main .heading-container .heading h1 {
+    font-size: 48px;
+  }
+
+  main .heading-container .heading .breadcumb i,
+  main .heading-container .heading .breadcumb a,
+  main .heading-container .heading .breadcumb span {
+    font-size: 12px;
+  }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 675px) {
   main .card-category-container .card-category-record,
   main .card-filter-category-container .card-filter-category-record {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .card-category-container .card-category-record card-food .card-food-image,
+  main .card-filter-category-container .card-filter-category-record card-food .card-food-image {
+    height: 300px;
+  }
+
+  main .card-category-container .card-category-record card-food .card-food-body h1,
+  main .card-filter-category-container .card-filter-category-record card-food .card-food-body h1 {
+    font-size: 30px;
+  }
+
+  main .title .icon i {
+    font-size: 18px;
+  }
+  
+  main .title p {
+    font-size: 12px;
+  }
+  
+  main .title h1 {
+    font-size: 36px;
+  }
+
+  main .heading-container .heading {
+    gap: 2em;
+  }
+  
+  main .heading-container .heading .breadcumb i,
+  main .heading-container .heading .breadcumb a,
+  main .heading-container .heading .breadcumb span {
+    font-size: 16px;
+  }
+
+  main .heading-container .heading h1 {
+    font-size: 64px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  main .title {
+    gap: 2em;
+  }
+
+  main .title .icon i {
+    font-size: 24px;
+  }
+  
+  main .title p {
+    font-size: 16px;
+  }
+  
+  main .title h1 {
+    font-size: 48px;
   }
 }
 

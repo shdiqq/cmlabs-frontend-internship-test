@@ -19,7 +19,7 @@ main .title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
 }
 
 main .title .icon {
@@ -30,17 +30,17 @@ main .title .icon {
 
 main .title .icon i {
   color: rgb(220, 100, 55);
-  font-size: 24px;
+  font-size: 18px;
 }
 
 main .title p {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 main .title h1 {
   font-weight: bold;
-  font-size: 48px;
+  font-size: 24px;
 }
 
 main .card-category-container .card-category-record,
@@ -67,20 +67,11 @@ main .card-filter-category-container .card-filter-category-record card-food .car
   background-position: center;
   width: auto;
   border-radius: 1em;
+  height: 200px;
 }
 
-main
-  .card-category-container
-  .card-category-record
-  card-food
-  .card-food-image
-  .card-food-background,
-main
-  .card-filter-category-container
-  .card-filter-category-record
-  card-food
-  .card-food-image
-  .card-food-background {
+main .card-category-container .card-category-record card-food .card-food-image .card-food-background,
+main .card-filter-category-container .card-filter-category-record card-food .card-food-image .card-food-background {
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0, 0.25);
@@ -98,21 +89,42 @@ main .card-filter-category-container .card-filter-category-record card-food .car
   text-align: center;
 }
 
+main .card-category-container .card-category-record card-food .card-food-body h1,
+main .card-filter-category-container .card-filter-category-record card-food .card-food-body h1 {
+  font-size: 18px;
+}
+
 /* detail/category.html */
 main .heading-container .heading {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1em;
 }
 
 main .heading-container .heading .breadcumb {
   display: flex;
   flex-direction: row;
-  gap: 1em;
+  align-items: center;
+  gap: 0.5em;
+}
+
+main .heading-container .heading .breadcumb i {
+  font-size: 10px;
+}
+
+main .heading-container .heading .breadcumb a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+main .heading-container .heading .breadcumb span {
+  color: rgb(0, 0, 0, 0.5);
+  font-size: 10px;
 }
 
 main .heading-container .heading h1 {
-  font-size: 64px;
+  font-size: 36px;
 }
 
 /* detail/meal.html */

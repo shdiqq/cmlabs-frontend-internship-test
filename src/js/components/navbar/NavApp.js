@@ -23,12 +23,24 @@ class NavApp extends LitElement {
       color: #000000;
       text-decoration: none;
       border: none;
+      font-size: 30px;
     }
 
     .navbar-container .navbar-section .navbar-right {
       display: flex;
-      gap: 24px;
       flex-direction: row;
+      gap: 24px;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 920px) {
+      .navbar-container .navbar-section .navbar-left .brand-name:hover {
+        border-bottom: 1px solid black;
+      }
+      
+      .navbar-container .navbar-section .navbar-left .brand-name a {
+        font-size: 36px;
+      }
     }
   `;
 

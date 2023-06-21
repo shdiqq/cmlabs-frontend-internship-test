@@ -2,9 +2,39 @@ import { LitElement, css, html } from 'lit';
 
 class NavLink extends LitElement {
   static styles = css`
-    a {
+    li {
+      list-style-type: none;
+    }
+
+    a,
+    a li {
+      font-size: 20px;
       text-decoration: none;
-      color: #000000;
+      font-size: 16px;
+      color: black;
+    }
+
+    a.nav-link li:hover {
+      border-bottom: 1px solid black;
+    }
+
+    @media screen and (max-width: 675px) {
+      li {
+        background: rgb(245, 245, 245);
+        border-radius: 0.5em;
+        padding: 1em 0;
+        text-align: center;
+      }
+
+      a.nav-link li:hover {
+        border-bottom: none;
+      }
+    }
+
+    @media screen and (min-width: 920px) {
+      a li {
+        font-size: 20px;
+      }
     }
   `;
 
@@ -27,15 +57,15 @@ class NavLink extends LitElement {
   render() {
     if (this.to === '') {
       return html`
-        <li class="nav-item">
-          <a class="nav-link">${this.content}</a>
-        </li>
+        <a>
+          <li class="nav-item">${this.content}</li>
+        </a>
       `;
     } else {
       return html`
-        <li class="nav-item">
-          <a class="nav-link" href="${this.to}">${this.content}</a>
-        </li>
+        <a class="nav-link" href="${this.to}">
+          <li class="nav-item">${this.content}</li>
+        </a>
       `;
     }
   }

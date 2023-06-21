@@ -21,7 +21,7 @@ class CardFood extends LitWithoutShadowDom {
         <a href="/detail/meal.html?meal_id=${this.id}">
           <div
             class="card-food-image"
-            style="background-image: url('${this.photoUrl}'); height: 400px;"
+            style="background-image: url('${this.photoUrl}');"
           >
             <div class="card-food-background">
               <div class="card-food-body">

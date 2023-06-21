@@ -91,16 +91,12 @@ const Detail_Meal = {
   },
 
   _templateListInstructions(dataInstruction) {
-    const instructions = dataInstruction.split('.');
+    const instructions = dataInstruction.split('\r\n');
     let li = '';
     console.log(instructions.length);
     instructions.forEach((instruction, index) => {
       if (index + 1 !== instructions.length) {
-        li += ` <li>
-              <p>Step ${index + 1}</p>
-              <p>${instruction}</p>
-              </li>
-            `;
+        li += `<li>${instruction}</li>`;
       }
     });
     return li;
