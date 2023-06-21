@@ -8,3 +8,219 @@
 body {
   background-color: rgb(235, 235, 235);
 }
+
+main {
+  padding-top: 150px;
+}
+
+/* category.html */
+
+main .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+main .title .icon {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+main .title .icon i {
+  color: rgb(220, 100, 55);
+  font-size: 24px;
+}
+
+main .title p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+main .title h1 {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+main .card-category-container .card-category-record,
+main .card-filter-category-container .card-filter-category-record,
+main .heading-container .heading {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2em;
+  display: grid;
+  gap: 32px;
+}
+
+main .card-category-container .card-category-record card-food a,
+main .card-filter-category-container .card-filter-category-record card-food a {
+  color: rgb(225, 225, 225, 1);
+  text-decoration: none;
+}
+
+main .card-category-container .card-category-record card-food .card-food-image,
+main .card-filter-category-container .card-filter-category-record card-food .card-food-image {
+  position: relative;
+  background-image: url('https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Fpage-assets%2Fhomepage_banner_3.png&w=1920&q=75');
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  border-radius: 1em;
+}
+
+main
+  .card-category-container
+  .card-category-record
+  card-food
+  .card-food-image
+  .card-food-background,
+main
+  .card-filter-category-container
+  .card-filter-category-record
+  card-food
+  .card-food-image
+  .card-food-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.25);
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+main .card-category-container .card-category-record card-food .card-food-body,
+main .card-filter-category-container .card-filter-category-record card-food .card-food-body {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* detail/category.html */
+main .heading-container .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+main .heading-container .heading .breadcumb {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+main .heading-container .heading h1 {
+  font-size: 64px;
+}
+
+/* detail/meal.html */
+
+main .detail-meal-container .detail-meal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+main .detail-meal-container .detail-meal .title-meal {
+  width: 90%;
+  text-align: center;
+}
+
+main .detail-meal-container .detail-meal .option {
+  display: flex;
+  flex-direction: row;
+}
+
+main .detail-meal-container .detail-meal .option button {
+  padding: 0.5em 2em;
+  border: 0.5px solid;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main .detail-meal-container .detail-meal .option button.video {
+  color: inherit;
+  background-color: inherit;
+  border-color: rgb(224, 55, 12, 0.5);
+  border-radius: 12px 0 0 12px;
+  cursor: auto;
+}
+
+main .detail-meal-container .detail-meal .option button.video.change {
+  color: #ffffff;
+  background-color: rgb(224, 55, 12);
+  border-color: rgb(224, 55, 12, 0.5);
+  border-radius: 12px 0 0 12px;
+  cursor: pointer;
+}
+
+main .detail-meal-container .detail-meal .option button.transcript {
+  color: #ffffff;
+  background-color: rgb(224, 55, 12);
+  border-color: rgb(224, 55, 12, 0.5);
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+}
+
+main .detail-meal-container .detail-meal .option button.transcript.change {
+  color: inherit;
+  background-color: inherit;
+  border-color: rgb(224, 55, 12, 0.5);
+  border-radius: 0 12px 12px 0;
+  cursor: auto;
+}
+
+main .detail-meal-container .detail-meal .video-wrapper {
+  width: 60%;
+}
+
+main .detail-meal-container .detail-meal .video-wrapper.hide {
+  display: none;
+}
+
+main .detail-meal-container .detail-meal .video-wrapper .video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+main .detail-meal-container .detail-meal .video-wrapper .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main .detail-meal-container .detail-meal .ingredients-container,
+main .detail-meal-container .detail-meal .instructions-container {
+  width: 100%;
+}
+
+main .detail-meal-container .detail-meal .ingredients-container {
+  background: #fff080;
+}
+
+main .detail-meal-container .detail-meal .ingredients-container .ingredients,
+main .detail-meal-container .detail-meal .instructions-container .instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 3em 0;
+  margin: 0 auto;
+  width: 60%;
+}
+
+main .detail-meal-container .detail-meal .ingredients-container .ingredients ul,
+main .detail-meal-container .detail-meal .instructions-container .instructions ol {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

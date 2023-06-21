@@ -25,11 +25,19 @@ class NavLink extends LitElement {
   }
 
   render() {
-    return html`
-      <li class="nav-item">
-        <a class="nav-link" href="${this.to}">${this.content}</a>
-      </li>
-    `;
+    if (this.to === '') {
+      return html`
+        <li class="nav-item">
+          <a class="nav-link">${this.content}</a>
+        </li>
+      `;
+    } else {
+      return html`
+        <li class="nav-item">
+          <a class="nav-link" href="${this.to}">${this.content}</a>
+        </li>
+      `;
+    }
   }
 }
 

@@ -1,0 +1,33 @@
+@media screen and (min0-width: 500px) {
+}
+
+@media screen and (min-width: 650px) {
+  main .card-category-container .card-category-record,
+  main .card-filter-category-container .card-filter-category-record {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 950px) {
+  main .card-category-container .card-category-record,
+  main .card-filter-category-container .card-filter-category-record {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  main .card-category-container .card-category-record,
+  main .card-filter-category-container .card-filter-category-record {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  main .card-category-container .card-category-record card-food,
+  main .card-filter-category-container .card-filter-category-record card-food {
+    transition: scale 0.5s;
+  }
+
+  main .card-category-container .card-category-record card-food:hover,
+  main .card-filter-category-container .card-filter-category-record card-food:hover {
+    scale: 1.1;
+  }
+}

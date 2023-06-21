@@ -6,7 +6,7 @@ class NavLinks extends LitElement {
     ul button {
       display: none;
     }
-    
+
     ul {
       list-style: none;
       display: flex;
@@ -25,16 +25,16 @@ class NavLinks extends LitElement {
 
   render() {
     return html`
-    <button @click=${() => this._showNavLink()} aria-label="navigation-menu-open">☰</button>
-    <ul>
-      <button @click=${() => this._hideNavLink()} aria-label="navigation-menu-close">X</button>
-      <nav-link content="Home" to="/"></nav-link>
-      <nav-link content="Foods" to="/"></nav-link>
-      <nav-link content="Ingredients" to="/"></nav-link>
-      <nav-link content="Local Culinary" to="/"></nav-link>
-      <nav-link-auth></nav-link-auth>
-    </ul>
-  `;
+      <button @click=${() => this._showNavLink()} aria-label="navigation-menu-open">☰</button>
+      <ul>
+        <button @click=${() => this._hideNavLink()} aria-label="navigation-menu-close">X</button>
+        <nav-link content="Home" to="/"></nav-link>
+        <nav-link content="Foods" to=""></nav-link>
+        <nav-link content="Ingredients" to=""></nav-link>
+        <nav-link content="Local Culinary" to=""></nav-link>
+        <nav-link-auth></nav-link-auth>
+      </ul>
+    `;
   }
 
   _showNavLink() {

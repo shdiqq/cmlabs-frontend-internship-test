@@ -52,7 +52,7 @@ module.exports = {
       template: path.resolve(__dirname, 'src/views/category.html'),
       ...htmlWebpackPluginConfig,
     }),
-    
+
     // Details Pages
     new HtmlWebpackPlugin({
       title: 'Category Detail',

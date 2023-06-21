@@ -8,7 +8,7 @@ class NavApp extends LitElement {
       z-index: 5;
       width: 100%;
     }
-    
+
     .navbar-container .navbar-section {
       margin: auto;
       width: 85%;
@@ -19,8 +19,10 @@ class NavApp extends LitElement {
       align-items: center;
     }
 
-    .navbar-container .navbar-section .navbar-left .brand-name {
-      color: #00000;
+    .navbar-container .navbar-section .navbar-left .brand-name a {
+      color: #000000;
+      text-decoration: none;
+      border: none;
     }
 
     .navbar-container .navbar-section .navbar-right {
@@ -50,7 +52,7 @@ class NavApp extends LitElement {
       <nav class="navbar-container">
         <div class="navbar-section">
           <div class="navbar-left">
-            <h1 class="brand-name" @click=${() => this._goToDashboard()}>${this.brandName}</h1>
+            <h1 class="brand-name"><a href="/">${this.brandName}</a></h1>
           </div>
           <div class="navbar-right">
             <nav-links></nav-links>
@@ -58,10 +60,6 @@ class NavApp extends LitElement {
         </div>
       </nav>
     `;
-  }
-
-  _goToDashboard() {
-    window.location.href = '/index.html';
   }
 }
 
