@@ -7,8 +7,8 @@
     "url": "git+https://github.com/shdiqq/cmlabs-frontend-internship-test.git"
   },
   "scripts": {
-    "build:prod": "webpack-dev-server --config webpack.dev.js",
-    "build:dev": "webpack --config webpack.prod.js",
+    "build:prod": "webpack --config webpack.prod.js",
+    "build:dev": "webpack serve --config webpack.dev.js",
     "prettier:check": "prettier --check .",
     "prettier:format": "prettier --write .",
     "predeploy": "npm run build:prod",
