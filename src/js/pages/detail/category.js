@@ -6,8 +6,8 @@ const Detail_Category = {
   },
 
   async _initialData() {
-    // const preloaderWrapper = document.getElementById('preloaderWrapper');
-    // preloaderWrapper.style.visibility = 'visible';
+    const preloaderWrapper = document.getElementById('preloader-wrapper');
+    preloaderWrapper.style.visibility = 'visible';
     const params = window.location.search.split('?')[1].split('=')[1];
     try {
       const response = await Meal.getFilterCategory(params);
@@ -17,7 +17,7 @@ const Detail_Category = {
     } catch (error) {
       console.error(error);
     } finally {
-      // preloaderWrapper.style.visibility = 'hidden';
+      preloaderWrapper.style.visibility = 'hidden';
     }
   },
 
@@ -39,9 +39,7 @@ const Detail_Category = {
 
     recordBodyHeading.innerHTML += this._templateHeader(params);
 
-    const recordBodyCard = document.querySelector(
-      'main .card-filter-category-container .card-filter-category-record',
-    );
+    const recordBodyCard = document.querySelector('main .card-filter-category-container .card-filter-category-record');
     recordBodyCard.innerHTML = '';
 
     if (listFilterCategory.length <= 0) {

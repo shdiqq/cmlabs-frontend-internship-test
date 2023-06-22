@@ -68,7 +68,7 @@ class NavLinks extends LitElement {
       <div class="nav-link">
         <ul>
           <nav-link content="Home" to="/"></nav-link>
-          <nav-link content="Foods" to=""></nav-link>
+          <nav-link content="Foods" to="/"></nav-link>
           <nav-link content="Ingredients" to=""></nav-link>
           <nav-link content="Local Culinary" to=""></nav-link>
           <nav-link-auth></nav-link-auth>

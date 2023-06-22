@@ -9,6 +9,8 @@
   "scripts": {
     "build:prod": "webpack --config webpack.prod.js",
     "build:dev": "webpack serve --config webpack.dev.js",
+    "serve": "http-server dist",
+    "build-serve": "npm run build:prod && npm run serve",
     "prettier:check": "prettier --check .",
     "prettier:format": "prettier --write .",
     "predeploy": "npm run build:prod",

@@ -6,16 +6,20 @@ class NavLink extends LitElement {
       list-style-type: none;
     }
 
-    a,
+    a {
+      text-decoration: none;
+      cursor: default;
+    }
+
     a li {
       font-size: 20px;
-      text-decoration: none;
       font-size: 16px;
       color: black;
     }
 
     a.nav-link li:hover {
       border-bottom: 1px solid black;
+      cursor: pointer;
     }
 
     @media screen and (max-width: 675px) {

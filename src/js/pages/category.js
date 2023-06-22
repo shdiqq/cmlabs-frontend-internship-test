@@ -6,8 +6,9 @@ const Category = {
   },
 
   async _initialData() {
-    // const preloaderWrapper = document.getElementById('preloaderWrapper');
-    // preloaderWrapper.style.visibility = 'visible';
+    const preloaderWrapper = document.getElementById('preloader-wrapper');
+    console.log(preloaderWrapper);
+    preloaderWrapper.style.visibility = 'visible';
     try {
       const response = await Meal.getListCategories();
       const responseRecords = response.data;
@@ -16,7 +17,7 @@ const Category = {
     } catch (error) {
       console.error(error);
     } finally {
-      // preloaderWrapper.style.visibility = 'hidden';
+      preloaderWrapper.style.visibility = 'hidden';
     }
   },
 

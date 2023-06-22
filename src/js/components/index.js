@@ -5,3 +5,6 @@ import './navbar/NavLink';
 
 // card
 import './card/CardFood';
+
+// loading
+import './loading/LoadingSpinner'

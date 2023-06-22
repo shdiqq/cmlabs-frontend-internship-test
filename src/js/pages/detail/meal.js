@@ -6,19 +6,18 @@ const Detail_Meal = {
   },
 
   async _initialData() {
-    // const preloaderWrapper = document.getElementById('preloaderWrapper');
-    // preloaderWrapper.style.visibility = 'visible';
+    const preloaderWrapper = document.getElementById('preloader-wrapper');
+    preloaderWrapper.style.visibility = 'visible';
     const params = window.location.search.split('?')[1].split('=')[1];
     try {
       const response = await Meal.getDetailMeal(params);
       const responseRecords = response.data;
       this._listDetailMeal = responseRecords.meals;
-      console.log(this._listDetailMeal);
       this._populateRecordToCardFood(this._listDetailMeal);
     } catch (error) {
       console.error(error);
     } finally {
-      // preloaderWrapper.style.visibility = 'hidden';
+      preloaderWrapper.style.visibility = 'hidden';
     }
   },
 
@@ -93,7 +92,6 @@ const Detail_Meal = {
   _templateListInstructions(dataInstruction) {
     const instructions = dataInstruction.split('\r\n');
     let li = '';
-    console.log(instructions.length);
     instructions.forEach((instruction, index) => {
       if (index + 1 !== instructions.length) {
         li += `<li>${instruction}</li>`;

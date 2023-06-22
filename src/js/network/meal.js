@@ -12,7 +12,7 @@ const Meal = {
         return res;
       })
       .catch((err) => {
-        console.log(err);
+        //console.log(err);
         return err;
       });
   },
@@ -27,7 +27,7 @@ const Meal = {
         return res;
       })
       .catch((err) => {
-        console.log(err);
+        //console.log(err);
         return err;
       });
   },
@@ -42,7 +42,7 @@ const Meal = {
         return res;
       })
       .catch((err) => {
-        console.log(err);
+        //console.log(err);
         return err;
       });
   },
